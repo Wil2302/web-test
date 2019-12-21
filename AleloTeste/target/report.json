@@ -1,0 +1,98 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 33957187405,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Pesquisar um cep e guardar as informações da pesquisa",
+        "description": "",
+        "id": "pesquisa-de-cep;pesquisar-um-cep-e-guardar-as-informações-da-pesquisa",
+        "after": [
+          {
+            "result": {
+              "duration": 1635943230,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1181065605,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que pesquiso um CEP",
+            "match": {
+              "location": "BuscarCEPSteps.que_pesquiso_um_CEP()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 88808676044,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "gravo a resposta",
+            "match": {
+              "location": "BuscarCEPSteps.gravo_a_resposta()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 47539607195,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "valido a resposta gravada",
+            "match": {
+              "location": "BuscarCEPSteps.valido_a_resposta_gravada()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@COREIOTESTE"
+          }
+        ]
+      }
+    ],
+    "name": "Pesquisa de CEP",
+    "description": "\r\nComo um usuário \r\nGostaria de pesquisar um CEP\r\nPara que eu possa obter as informações de endereço",
+    "id": "pesquisa-de-cep",
+    "keyword": "Funcionalidade",
+    "uri": "correios.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@funcionais"
+      }
+    ]
+  }
+]
