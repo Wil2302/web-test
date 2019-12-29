@@ -1,6 +1,7 @@
 package correios.core;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,10 +13,21 @@ import org.json.simple.parser.JSONParser;
 import constants.Globals;
 
 public class Utils {
+	
+	public static void deletFile() {
+		File file = new File(Globals.PATH);
+		if (file.exists()) {
+		    file.delete();
+		} else {
+		    System.err.println(
+		        "I cannot find '" + file + "' ('" + file.getAbsolutePath() + "')");
+		}
+	}
 
 	public static void gravarDados(String data) throws IOException {
+		deletFile();
 		BufferedWriter writer = new BufferedWriter(new FileWriter(Globals.PATH, true));
-		writer.append(' ');
+		writer.append("");
 		writer.append(data);
 		writer.close();
 	}
@@ -23,7 +35,7 @@ public class Utils {
 	public static String obterDadosChave(String chave) {
 		return Globals.DADOS_CEP.get(chave).toString();
 	}
-	
+
 	public static void lerJson() throws java.io.IOException, ParseException, org.json.simple.parser.ParseException {
 
 		JSONObject obj;
