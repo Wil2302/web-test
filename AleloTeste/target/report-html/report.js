@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 29955738012,
+  "duration": 30075099948,
   "status": "passed"
 });
 formatter.scenario({
@@ -55,25 +55,25 @@ formatter.match({
   "location": "BuscarCEPSteps.que_pesquiso_um_CEP()"
 });
 formatter.result({
-  "duration": 893577466,
+  "duration": 701600736,
   "status": "passed"
 });
 formatter.match({
   "location": "BuscarCEPSteps.gravo_a_resposta()"
 });
 formatter.result({
-  "duration": 302222716,
+  "duration": 225641671,
   "status": "passed"
 });
 formatter.match({
   "location": "BuscarCEPSteps.valido_a_resposta_gravada()"
 });
 formatter.result({
-  "duration": 2648927,
+  "duration": 2531118,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1576457657,
+  "duration": 1673372879,
   "status": "passed"
 });
 });

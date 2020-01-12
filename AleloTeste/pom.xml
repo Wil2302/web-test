@@ -17,6 +17,8 @@
 					<includes>
 						<include>correios/runners/*.java</include>
 					</includes>
+					<parallel>all</parallel>
+					<threadCount>3</threadCount>
 				</configuration>
 			</plugin>
 		</plugins>

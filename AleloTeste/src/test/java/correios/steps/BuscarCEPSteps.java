@@ -4,7 +4,7 @@ import correios.actions.BuscaCEPEnderecoAction;
 import correios.core.ThreadDriver;
 import correios.core.Utils;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
 public class BuscarCEPSteps {
@@ -14,7 +14,7 @@ public class BuscarCEPSteps {
 	
 	@Dado("^que pesquiso um CEP$")
 	public void que_pesquiso_um_CEP() throws Throwable {
-		new BuscaCEPEnderecoAction(ThreadDriver.getTDriver()).pesquisarCEP("04414000");
+		new BuscaCEPEnderecoAction(ThreadDriver.getTDriver()).pesquisarCEP("08460210");
 	}
 
 	@Quando("^gravo a resposta$")
@@ -26,7 +26,7 @@ public class BuscarCEPSteps {
 		Utils.lerJson();
 	}
 
-	@Então("^valido a resposta gravada$")
+	@Entao("^valido a resposta gravada$")
 	public void valido_a_resposta_gravada() throws Throwable {
 		thread.validarDadosGravados();
 	}
