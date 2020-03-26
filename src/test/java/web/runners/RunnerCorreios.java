@@ -8,7 +8,7 @@ import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features/", glue = "correios.steps", 
+@CucumberOptions(features = "src/test/resources/features/correios.feature", glue = "web.steps", 
 				 tags = {"@COREIOTESTE" },
 				 plugin = { "pretty", "html:target/report-html","json:target/report.json" },
 				 monochrome = true, 

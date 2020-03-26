@@ -13,9 +13,9 @@ public class Browser implements IBrowser {
     public WebDriverWait wait;
 
 	public void setupBrowser() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\wamorimn\\Downloads\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Desenvolvimento\\git-web\\web-test\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().window();
+		driver.manage().window().fullscreen();
 		driver.get(URL_BASE);
 
 		ThreadDriver.setTDriver(driver);
