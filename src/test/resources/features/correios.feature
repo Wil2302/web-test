@@ -4,7 +4,7 @@ Funcionalidade: Pesquisa de CEP
   
   Como um usuario 
   Gostaria de pesquisar um CEP
-  Para que eu possa obter as informações de endereço
+  Para que eu possa obter as informacoes de endereco
 
   @COREIOTESTE
   Cenario: Pesquisar um cep e guardar as informacoes da pesquisa

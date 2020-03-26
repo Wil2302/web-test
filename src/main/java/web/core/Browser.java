@@ -13,7 +13,7 @@ public class Browser implements IBrowser {
     public WebDriverWait wait;
 
 	public void setupBrowser() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Desenvolvimento\\git-web\\web-test\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().fullscreen();
 		driver.get(URL_BASE);
