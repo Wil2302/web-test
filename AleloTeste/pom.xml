@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>correios</groupId>
-	<artifactId>AleloTest</artifactId>
+	<groupId>web</groupId>
+	<artifactId>WebTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<build>
@@ -15,7 +15,7 @@
 				<version>2.18.1</version>
 				<configuration>
 					<includes>
-						<include>correios/runners/*.java</include>
+						<include>web/runners/*.java</include>
 					</includes>
 					<parallel>all</parallel>
 					<threadCount>3</threadCount>
