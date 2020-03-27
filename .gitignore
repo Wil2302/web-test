@@ -50,5 +50,5 @@ SCA-INF\classes
 .data
 .data/*
 .tmp
-./targuet/
-/target/
+.targuet/
+
