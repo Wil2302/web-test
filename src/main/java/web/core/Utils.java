@@ -32,10 +32,6 @@ public class Utils {
 		writer.close();
 	}
 
-	public static String obterDadosChave(String chave) {
-		return Globals.DADOS_CEP.get(chave).toString();
-	}
-
 	public static void lerJson() throws java.io.IOException, ParseException, org.json.simple.parser.ParseException {
 
 		JSONObject obj;
@@ -43,7 +39,12 @@ public class Utils {
 		FileReader f = null;
 		f = new FileReader(Globals.PATH);
 		obj = (JSONObject) parser.parse(f);
-		Globals.DADOS_CEP = obj;
+		Globals.DADOS = obj;
+	}
+
+	public static String obterDadosChave(String chave) throws Exception{
+		lerJson();
+		return Globals.DADOS.get(chave).toString();
 	}
 
 }

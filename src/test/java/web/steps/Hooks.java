@@ -16,7 +16,7 @@ public class Hooks {
 
 	}
 
-	@After(order = 0, value = { "@COREIOTESTE" })
+	@After(order = 0, value = { "@COMPRAS" })
 	public void fecharBrowser() {
 		ThreadDriver.getTDriver().quit();
 		System.out.println("terminando");

@@ -9,13 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Browser implements IBrowser {
 
 	private static WebDriver driver;
-	private static String URL_BASE = "http://www.buscacep.correios.com.br/sistemas/buscacep/buscaCepEndereco.cfm";
+	private static String URL_BASE = "https://www.amazon.com.br/";
     public WebDriverWait wait;
 
 	public void setupBrowser() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().window().fullscreen();
+		driver.manage().window();
 		driver.get(URL_BASE);
 
 		ThreadDriver.setTDriver(driver);

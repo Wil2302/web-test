@@ -14,7 +14,7 @@ public class BuscarCEPSteps {
 	
 	@Dado("que pesquiso um CEP")
 	public void que_pesquiso_um_CEP() throws Throwable {
-		new BuscaCEPEnderecoAction(ThreadDriver.getTDriver()).pesquisarCEP("08460210");
+		new BuscaCEPEnderecoAction(ThreadDriver.getTDriver()).pesquisarCEP("03691000");
 	}
 
 	@Quando("gravo a resposta")

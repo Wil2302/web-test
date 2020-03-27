@@ -33,7 +33,7 @@ public class BuscaCEPEnderecoAction extends BaseActions{
 	    return json;
 	}
 	
-	public void validarDadosGravados() {
+	public void validarDadosGravados() throws Exception {
 		Assert.assertEquals(Utils.obterDadosChave("bairro"), dto.getBairro());
 		Assert.assertEquals(Utils.obterDadosChave("localidade"), dto.getLocalidade());
 		Assert.assertEquals(Utils.obterDadosChave("logradouro"), dto.getLogradouro());
