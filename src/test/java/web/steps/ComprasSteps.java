@@ -24,7 +24,8 @@ public class ComprasSteps {
 
 	@Entao("^adiciono esse item ao carrinho$")
 	public void adiciono_esse_item_ao_carrinho() throws Throwable {
-		
+		compras.selecionarProduto();
+		compras.adicionarCarrinho();
 	}
 
 	@E("^valido se o iten se encontra no carrinho$")

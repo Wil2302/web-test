@@ -26,4 +26,15 @@ public class ComprasAction extends BaseActions {
 			throw new Exception("Retorno de Pesquisa incorreto");
 		}
 	}
+	
+	public void selecionarProduto() throws Exception {
+		WebElement selecaoIten = driver.findElement(By.xpath(
+				"//div[@class=\"a-section a-spacing-none\"]"));
+			selecaoIten.click();
+	}
+	
+	public void adicionarCarrinho() {
+		WebElement addCarrinho = driver.findElement(By.id("add-to-cart-button"));
+		addCarrinho.click();
+	}
 }
