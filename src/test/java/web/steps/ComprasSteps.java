@@ -1,5 +1,6 @@
 package web.steps;
 
+import org.junit.Assert;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
@@ -30,6 +31,7 @@ public class ComprasSteps {
 
 	@E("^valido se o iten se encontra no carrinho$")
 	public void valido_se_o_iten_se_encontra_no_carrinho() throws Throwable {
+		Assert.assertTrue(compras.verificarCarrinho());
 	}
 
 }
