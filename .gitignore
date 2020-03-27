@@ -50,4 +50,4 @@ SCA-INF\classes
 .data
 .data/*
 .tmp
-./targuet/
+.targuet/
