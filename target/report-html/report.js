@@ -8,7 +8,7 @@ formatter.feature({
   ],
   "line": 3,
   "name": "Adicionar um item ao carrinho",
-  "description": "\nComo um usuario \nGostaria de pesquisar um iten\nE adicionar esse item ao carrinho",
+  "description": "\r\nComo um usuario \r\nGostaria de pesquisar um iten\r\nE adicionar esse item ao carrinho",
   "id": "adicionar-um-item-ao-carrinho",
   "keyword": "Funcionalidade",
   "tags": [
@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4470867400,
+  "duration": 5089104700,
   "status": "passed"
 });
 formatter.scenario({
@@ -60,33 +60,16 @@ formatter.match({
   "location": "ComprasSteps.que_pesquiso_um_iten_no_e_comerce_amazon()"
 });
 formatter.result({
-  "duration": 1262810100,
+  "duration": 2019660800,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.valido_a_pesquisa()"
 });
 formatter.result({
-  "duration": 27409100,
+  "duration": 85238800,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.adiciono_esse_item_ao_carrinho()"
-});
-formatter.result({
-  "duration": 5079423000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ComprasSteps.valido_se_o_iten_se_encontra_no_carrinho()"
-});
-formatter.result({
-  "duration": 1210198000,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat web.steps.ComprasSteps.valido_se_o_iten_se_encontra_no_carrinho(ComprasSteps.java:34)\r\n\tat ✽.E valido se o iten se encontra no carrinho(compras.feature:14)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 811951000,
-  "status": "passed"
-});
 });
