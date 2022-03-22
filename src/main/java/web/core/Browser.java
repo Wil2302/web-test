@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Browser implements IBrowser {
@@ -14,10 +15,11 @@ public class Browser implements IBrowser {
 
 	public void setupBrowser() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "./chromedriver");
-		driver = new ChromeDriver();
 		driver.manage().window();
 		driver.get(URL_BASE);
-
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+		driver = new ChromeDriver(options);
 		ThreadDriver.setTDriver(driver);
 		wait = new WebDriverWait(ThreadDriver.getTDriver(), 10);
 	}
